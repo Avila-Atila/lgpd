@@ -1,0 +1,81 @@
+.fordform {
+  display: block;
+  width: 300px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  margin: 8px;
+  font-size: 13px;
+  padding: 5px;
+}
+
+select.fordform {
+  width: 310px;
+  height: 36px;
+  color: #807d7d;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+select:focus-visible {
+  outline: none;
+}
+
+main div {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.forms {
+  display: block;
+  text-align: center;
+}
+
+h2 {
+  text-align: left;
+  font-weight: 800;
+}
+
+button {
+  width: 50%;
+  height: 40px;
+  margin-right: 8px;
+  float: right;
+  transition-duration: 0.5s;
+  background: grey;
+  color: #fff;
+  border: 0px;
+  border-radius: 10px;
+}
+
+.button__selecionado {
+  background: var(--cor-azul-fraca) !important;
+}
+
+.button__selecionado:hover {
+  background: var(--cor-azul-forte) !important;
+  cursor: pointer;
+  scale: 1.1;
+}
+
+.titulo {
+  margin-left: 8px;
+}
+textarea {
+  resize: none;
+}
+#form__privacidade__paragrafo {
+  opacity: 0.5;
+}
+.form__privacidade__texto {
+  width: 300px;
+  margin: 8px;
+  padding: 5px;
+  font-size: 0.8rem;
+  display: block;
+  word-wrap: normal;
+}
