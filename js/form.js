@@ -19,8 +19,10 @@ headerLinks.forEach((link) => {
 termos.addEventListener("change", () => {
   if (termos.checked) {
     botaoForm.classList.add("button__selecionado");
+    botaoForm.removeAttribute("disabled");
   } else {
     botaoForm.classList.remove("button__selecionado");
+    botaoForm.setAttribute("disabled", true);
   }
 });
 
