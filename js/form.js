@@ -24,9 +24,6 @@ class contato {
     this.tipoDeContato = tipoDeContato;
     this.promocoes = promocoes;
   }
-  static enviarInfo(respostaForm) {
-    console.table(respostaForm);
-  }
 }
 
 function Post(form) {
@@ -39,7 +36,6 @@ function Post(form) {
     form.elements.namedItem("contato").value,
     form.elements.namedItem("form__privacidade__promocoes").checked
   );
-  contato.enviarInfo(data);
 }
 
 function Enviar() {
@@ -53,5 +49,6 @@ function Enviar() {
     alert(
       `Obrigado sr(a) ${nome.value}, os seus dados foram encaminhados com sucesso!`
     );
+    document.getElementById("formulario").reset();
   }
 }
